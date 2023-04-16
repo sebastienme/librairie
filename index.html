@@ -8,12 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-form-section"></div>
+    <div class="form-section">
+        <form id="book-form">
+            <div class="form-close"><a class="close-link"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="20" height="20" id="close"><path d="M13.4,12l6.3-6.3c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4
+                l6.3,6.3l-6.3,6.3C4.1,18.5,4,18.7,4,19c0,0.6,0.4,1,1,1c0.3,0,0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.4,0.3,0.7,0.3
+                s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L13.4,12z"></path></svg></a></div>
+            <label for="title">Titre</label>
+            <input type="text" id="title" name="title">
+            <label for="author">Auteur</label>
+            <input type="text" id="author" name="author">
+            <label for="page-number">Nombre de pages</label>
+            <input type="text" id="page-number" name="page-number">
+            <label for="date">Année</label>
+            <input type="text" id="date" name="date">
+            <label for="read">Lu</label>
+            <input type="text" id="read" name="read">
+            <input type="submit" value="Ajouter">
+        </form>
+    </div>
     <nav>
         <div class="navbar-title">Ma Biblio</div>
     </nav>
     <main>
         <section class="cards-container">
-            <div class="cards-container__item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="96" height="96" id="plus"><g data-name="Layer 2"><g data-name="plus"><rect width="24" height="24" opacity="0" transform="rotate(180 12 12)"></rect><path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2z"></path></g></g></svg></div>
+            <div class="cards-container__item extra"><svg id="plus-sign" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="96" height="96" id="plus"><g data-name="Layer 2"><g data-name="plus"><rect width="24" height="24" opacity="0" transform="rotate(180 12 12)"></rect><path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2z"></path></g></g></svg></div>
         </section>
     </main>
 
