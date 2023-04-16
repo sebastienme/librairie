@@ -102,6 +102,7 @@ nav {
     display: flex;
     flex-direction: column;
     
+    overflow: hidden;
 
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -186,6 +187,7 @@ nav {
 
 .cards-container__item__close {
     text-align: center;
+    overflow: hidden;
 
     display: flex;
     justify-content: center;
@@ -198,19 +200,23 @@ nav {
 }
 
 .cards-container__item__close__wrapper {
+    cursor: pointer;
     height: 25px;
     display: none;
     justify-content: center;
     align-items: center;
     background-color: rgb(255 98 98);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     width: 100%;
     transition-duration: 300ms;
 }
 
 .cards-container__item:hover .cards-container__item__close__wrapper {
     display: flex;
+}
+
+.cards-container__item:hover .cards-container__item__bottom_wrapper__three {
+    background-color: rgb(198, 255, 198);
+    cursor: pointer;
 }
 
 .background-form-section {
